@@ -1,0 +1,74 @@
+
+.background_clr {
+    background-color: var(--color-gray100);
+
+}
+/* PAGE ONE - CONTACT */
+/* .contact_page {
+
+} */
+
+.contact_box {
+    display: grid;
+
+    grid-template-areas: 
+    "c_h" 
+    "c_email"
+    "c_career"
+    "consult";
+
+
+}
+
+#contact_header {grid-area: c_h;}
+#contact_email {grid-area: c_email;}
+#contact_career {grid-area: c_career;}
+
+
+
+
+.contact_card {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: left;
+    gap: 1rem;
+
+    p {
+        margin: 1rem 0;
+    }
+
+    img {
+        padding: .75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.circle_icon {
+    display: block;
+    background-color: var(--color-white);
+    height: 2.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Consult */
+.consult_box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* justify-content: center; */
+    background-color: white;
+    
+    grid-area: consult;
+}
+
+.consult_form {
+    display: flex;
+    /* flex-direction: column;
+    width: 100%; */
+}
+/* PAGE TWO - MAP */
