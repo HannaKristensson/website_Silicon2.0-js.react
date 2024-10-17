@@ -371,7 +371,7 @@ header .container {
 }
 
 /* Arrow button */
-.vectorarrow {
+.btn_arrow {
     display: block;
     background-color: var(--color-white);
     height: 2.8rem;
@@ -384,7 +384,7 @@ header .container {
     }
 }
 
-.vectorarrow:hover {
+.btn_arrow:hover {
     background-color: var(--color-primary);
     box-shadow: 0px -8px 18px -8px rgba(99, 101, 241, 0.8);
     .arrow-light {
@@ -395,7 +395,7 @@ header .container {
     }
 }
 
-.vectorarrow:active {
+.btn_arrow:active {
     background-color: #4f51d6;
 }
 
