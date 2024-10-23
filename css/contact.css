@@ -3,6 +3,44 @@
     background-color: var(--color-gray100);
 
 }
+
+.square_icon {
+    height: 4rem;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background-color: var(--color-gray200);
+    position: relative;
+
+    img {
+        height: 50%;
+        /* padding: .1rem; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+.circle_icon {
+    display: block;
+    background-color: var(--color-white);
+    height: 2.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+
+    
+    img {
+        padding: .75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
 /* SECTION ONE - CONTACT */
 .contact_section {
     padding-bottom: 3rem;
@@ -38,23 +76,6 @@ padding-top: 2rem;
     }
 }
 
-.circle_icon {
-    display: block;
-    background-color: var(--color-white);
-    height: 2.8rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: relative;
-
-    
-    img {
-        padding: .75rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
 
 /* Consult */
 .consult_box {
@@ -96,7 +117,58 @@ padding-top: 2rem;
 }
 
 
-/* PAGE TWO - MAP */
+/* SECTION TWO - DIRECTIONS  */
+.direction_section 
+
+.direction_map {
+    display: none;
+}
+
+/* .direction_box */
+
+.direction_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.direction_card {
+    display: grid;
+    grid-template-areas: 
+    "d_header d_header"
+    "di_pin dt_pin"
+    "di_call dt_call"
+    "di_clock dt_time";
+
+    grid-template-columns: auto 1fr ;
+
+    gap: 1em;
+    text-align: left;
+    width: 100%;
+    padding: 1.5rem 3rem;
+
+    h4 {
+        text-align: center;
+    }
+}
+
+.dir_header {grid-area: d_header;}
+.dirimg_pin {grid-area: di_pin;}
+.dirimg_call {grid-area: di_call;}
+.dirimg_clock {grid-area: di_clock;}
+
+.dirtxt_pin {grid-area: dt_pin}
+.dirtxt_call {grid-area: dt_call}
+.dirtxt_time {grid-area: dt_time}
+
+
+.social_card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+
 
 
 
@@ -144,8 +216,79 @@ padding-top: 2rem;
 
 .consult_box {
     max-width: 750px;
-    box-shadow: ;
+    box-shadow: 0px 4.8px 24.4px -6px hsla(250, 36%, 10%, 0.1);
+    box-shadow: 0px 4px 13px -2px hsla(250, 36%, 10%, 0.06);
     
 }
 
+/* SECTION TWO - DIRECTIONS  */
+
+.direction_map {
+    display: block;
+    min-width: 300px;
+    grid-area: dir_map;
 }
+
+.direction_section {
+    display: grid;
+    grid-template-areas: 
+    "dir_map dir_box"
+    "dir_map dir_box";
+
+}
+
+.direction_box {
+    grid-area: dir_box;
+}
+
+
+
+/* .direction_box {
+    display: grid;
+    grid-template-areas: 
+    "dir_card1 dir_card2"
+    "soc_card soc_card";
+
+}
+
+#direction_card1 {grid-area: dir_card1;}
+#direction_card2 {grid-area: dir_card2;}
+.social_card {grid-area: soc_card;} */
+
+
+
+}
+
+@media (min-width : 1200px) {   
+
+    .contact_section {
+        /* justify-content: left; */
+        align-items:start;
+        position: relative;
+    }
+    #contact_header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    #contact_email {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #contact_career {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .contact_card {
+        max-width: 500px;
+    }
+
+    .consult.box {
+        /* display: block; */
+        /* position: absolute; */
+        /* top: 0; */
+    }
+ }
