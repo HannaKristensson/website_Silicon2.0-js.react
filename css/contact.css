@@ -118,7 +118,7 @@ padding-top: 2rem;
 
 
 /* SECTION TWO - DIRECTIONS  */
-.direction_section 
+.direction_section {}
 
 .direction_map {
     display: none;
@@ -224,7 +224,10 @@ padding-top: 2rem;
 /* SECTION TWO - DIRECTIONS  */
 
 .direction_map {
+    padding-top: 2rem;
     display: block;
+    height: 100%;
+        object-fit: cover;
     min-width: 300px;
     grid-area: dir_map;
 }
