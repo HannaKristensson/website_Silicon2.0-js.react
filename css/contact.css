@@ -42,6 +42,11 @@
 
 
 /* SECTION ONE - CONTACT */
+
+.navigate {
+    display: none;
+}
+
 .contact_section {
     padding-bottom: 3rem;
     
@@ -112,6 +117,11 @@ padding-top: 2rem;
         font-size: 1rem;
         margin-top: 3rem;
         padding: .8rem;
+
+        @media (min-width: 1200px) {
+            margin-top: 7rem;
+            
+        }
     }
     
 }
@@ -263,11 +273,29 @@ padding-top: 2rem;
 }
 
 @media (min-width : 1200px) {   
+    
+.navigate {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+    p, a {
+        font-size: .87em;
+        color: var(--color-gray600)
+
+    }
+}
 
     .contact_section {
         /* justify-content: left; */
-        align-items:start;
+        /* align-items:start; */
+        display: grid;
+        /* grid-template-rows: 1fr 1fr; */
+        gap: 0;
         position: relative;
+    }
+
+    .contact_box {
+        padding-bottom: 5rem;
     }
     #contact_header {
         grid-column: 1/2;
@@ -284,14 +312,32 @@ padding-top: 2rem;
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    
+    /* .empty {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    } */
+
+    
 
     .contact_card {
         max-width: 500px;
     }
 
-    .consult.box {
+    .consult_box {
         /* display: block; */
-        /* position: absolute; */
-        /* top: 0; */
+        position: absolute;
+        max-width: 600px;
+        padding: 5rem;
+        top: 3rem;
+        right: 0;
+    }
+
+/* SECTION TWO - DIRECTIONS  */
+.direction_section {
+    margin-top: 11rem;
+}
+
+
     }
  }
