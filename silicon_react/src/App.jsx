@@ -8,6 +8,7 @@ import Frontpage from './components/Frontpage'
 import Features from './components/Features'
 import How from './components/How'
 import TransferReceive from './components/TransferReceive'
+import Reviews from './components/Reviews'
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
       < How />
     </div>
     < TransferReceive />
+    <div class="background-clr page_reviews">
+      < Reviews />
+    </div>
     < Footer />
     </main>
     </>
