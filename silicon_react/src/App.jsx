@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Brandbox from './components/Brandbox'
 import Frontpage from './components/Frontpage'
 import Features from './components/Features'
+import How from './components/How'
 
 function App() {
 
@@ -18,8 +19,11 @@ function App() {
       <div class="gradient">
         < Frontpage />
       </div>
+    < Brandbox /> 
     < Features />
-    < Brandbox />
+    <div class="background-clr">
+      < How />
+      </div>
     < Footer />
     </main>
     </>

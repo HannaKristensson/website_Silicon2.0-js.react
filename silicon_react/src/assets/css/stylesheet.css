@@ -492,16 +492,20 @@ header .container {
 
 /* PAGE THREE - HOW DOES IT WORK */
 .page_how {
-    position: grid;
+    display: flex;
+    flex-direction: column;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    justify-content: center;
     align-items: center;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
     gap: 2rem;
 }
+
+.how_phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .how_t2 {
     display: none;
 }
@@ -1136,10 +1140,6 @@ header .container {
 
 /* Page three - How does it work */
 .page_how {
-    position: grid;
-    grid-template-rows: 1fr auto auto;
-    grid-template-columns: 1fr;
-
     h2 {
         margin-bottom: .5rem;
     }
