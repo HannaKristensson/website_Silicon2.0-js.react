@@ -7,6 +7,7 @@ import Brandbox from './components/Brandbox'
 import Frontpage from './components/Frontpage'
 import Features from './components/Features'
 import How from './components/How'
+import TransferReceive from './components/TransferReceive'
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
     < Features />
     <div class="background-clr">
       < How />
-      </div>
+    </div>
+    < TransferReceive />
     < Footer />
     </main>
     </>
