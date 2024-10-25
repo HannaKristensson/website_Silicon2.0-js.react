@@ -59,6 +59,10 @@ display: grid;
 gap: 1rem;
 padding-top: 2rem;
 
+a {
+    font-weight: 600;
+}
+
 }
 
 /* #contact_header {grid-area: c_h;}
@@ -79,6 +83,12 @@ padding-top: 2rem;
     p {
         margin: 1rem 0;
     }
+}
+
+.contact_linktxt {
+display: flex;
+align-items: center;
+gap: .8rem;
 }
 
 
@@ -276,14 +286,18 @@ padding-top: 2rem;
     
 .navigate {
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
     margin-top: 1rem;
-    p, a {
+    p {
         font-size: .87em;
-        color: var(--color-gray600)
+        color: var(--color-gray600);
+    }
 
+    .nav_focus {
+        color: var(--color-primary);
     }
 }
+
 
     .contact_section {
         /* justify-content: left; */
@@ -338,6 +352,4 @@ padding-top: 2rem;
     margin-top: 11rem;
 }
 
-
-    }
- }
+}
