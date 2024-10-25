@@ -9,6 +9,7 @@ import Features from './components/Features'
 import How from './components/How'
 import TransferReceive from './components/TransferReceive'
 import Reviews from './components/Reviews'
+import Questions from './components/Questions'
 
 function App() {
 
@@ -17,20 +18,31 @@ function App() {
 
     <>
     < Header />
+
     <main>
+
       <div class="gradient">
         < Frontpage />
       </div>
+
     < Brandbox /> 
+
     < Features />
+
     <div class="background-clr">
       < How />
     </div>
+
     < TransferReceive />
+
     <div class="background-clr page_reviews">
       < Reviews />
     </div>
+
+    < Questions />
+
     < Footer />
+    
     </main>
     </>
   )

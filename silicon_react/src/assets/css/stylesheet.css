@@ -872,15 +872,16 @@ header .container {
         color: var(--color-gray700);
     }
 
-    nav {
-        display:flex;
-        font-size: var(--fontsize-14);
-        font-weight: 600;
-        gap: .7rem;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: .5rem;
-    }
+}
+
+.questions_nav {
+    display:flex;
+    font-size: var(--fontsize-14);
+    font-weight: 600;
+    gap: .7rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
 }
 
 .questions_call-txt {
