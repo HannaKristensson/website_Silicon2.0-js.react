@@ -10,6 +10,7 @@ import How from './components/How'
 import TransferReceive from './components/TransferReceive'
 import Reviews from './components/Reviews'
 import Questions from './components/Questions'
+import Newsletter from './components/Newsletter'
 
 function App() {
 
@@ -41,8 +42,10 @@ function App() {
 
     < Questions />
 
+    < Newsletter />
+
     < Footer />
-    
+
     </main>
     </>
   )
