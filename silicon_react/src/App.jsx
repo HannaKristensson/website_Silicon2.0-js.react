@@ -4,6 +4,7 @@ import './assets/css/stylesheet.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Brandbox from './components/Brandbox'
+import Frontpage from './components/Frontpage'
 
 function App() {
 
@@ -12,10 +13,14 @@ function App() {
 
     <>
     < Header />
-    < Footer />
+    <main>
+      <div class="gradient">
+        < Frontpage />
+      </div>
     < Brandbox />
+    < Footer />
+    </main>
     </>
-    
   )
 }
 
