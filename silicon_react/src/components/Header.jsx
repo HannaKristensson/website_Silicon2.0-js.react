@@ -19,7 +19,7 @@ function Header() {
 
             <div id="btn-toggle-switch" className="btn-toggle-switch">
                 <span className="label">Dark Mode</span>
-                <label for="darkmode-switch" className="toggle-switch" tabindex="0">
+                <label htmlFor="darkmode-switch" className="toggle-switch" tabIndex="0">
                     <input id="darkmode-switch" type="checkbox"/>
                     <span className="slider round"></span>
                 </label>

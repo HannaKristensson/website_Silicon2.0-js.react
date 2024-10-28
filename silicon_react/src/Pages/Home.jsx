@@ -1,31 +1,31 @@
 import React from 'react'
 
-import Frontpage from '../components/Frontpage'
-import Brandbox from '../components/Brandbox'
-import Features from '../components/Features'
-import How from '../components/How'
-import TransferReceive from '../components/TransferReceive'
-import Reviews from '../components/Reviews'
-import Questions from '../components/Questions'
-import Newsletter from '../components/Newsletter'
+import HomeFrontpage from '../components/HomeFrontpage'
+import HomeBrandbox from '../components/HomeBrandbox'
+import HomeFeatures from '../components/HomeFeatures'
+import HomeHow from '../components/HomeHow'
+import HomeTransferReceive from '../components/HomeTransferReceive'
+import HomeReviews from '../components/HomeReviews'
+import HomeQuestions from '../components/HomeQuestions'
+import HomeNewsletter from '../components/HomeNewsletter'
 
 const Home = () => {
   return (
     <>
     <div class="gradient">
-        < Frontpage />
+        < HomeFrontpage />
     </div>
-    < Brandbox /> 
-    < Features />
+    < HomeBrandbox /> 
+    < HomeFeatures />
     <div class="background-clr">
-      < How />
+      < HomeHow />
     </div>
-    < TransferReceive />
+    < HomeTransferReceive />
     <div class="background-clr page_reviews">
-      < Reviews />
+      < HomeReviews />
     </div>
-    < Questions />
-    < Newsletter />
+    < HomeQuestions />
+    < HomeNewsletter />
     </>
   )
 }

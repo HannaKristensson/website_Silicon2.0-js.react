@@ -1,12 +1,19 @@
 import React from 'react'
-import Breadcrumb from '../components/Breadcrumb'
+
+import ContactUs from '../components/ContactUs'
+import ContactDirection from '../components/ContactDirection'
 
 const Contact = () => {
   return (
-    <div>
-      <Breadcrumb />
-      Contact
-    </div>
+    <>
+    <main>
+      <div className="gradient ">
+        < ContactUs />
+      </div>
+        < ContactDirection />
+    </main>
+    </>
+
   )
 }
 
