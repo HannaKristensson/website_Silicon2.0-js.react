@@ -162,6 +162,34 @@ button {
     background-color: hsla(239, 70%, 56%, 0.1);
 }
 
+.form_primary {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--color-gray900);
+
+    input, select {
+        font-size: 1.125rem;
+        padding: .5rem .8rem;
+        width: 100%;
+        margin-bottom: 1.3rem;
+        border:1px solid var(--color-gray400);
+        border-radius: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+        margin-top: 3rem;
+        padding: .8rem;
+
+        @media (min-width: 1200px) {
+            margin-top: 7rem;  
+        }
+    }
+}
+
 
 .container {
     width: 100%;
@@ -1384,7 +1412,7 @@ header .container {
 
 
 #brand5, #brand6 {
-    display: block;
+    display: flex;
 }
 
 .brands-container {
