@@ -1,5 +1,5 @@
 import bell from '../assets/images/news_bell.svg'
-import NewsletterForm from './HomeNewsletterForm/NewsletterForm'
+import NewsletterForm from './HomeNewsletterForm/NewsletterForm.jsx'
 
 function Newsletter() {
   return (

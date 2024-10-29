@@ -8,13 +8,13 @@ import femaleAvatar from '../assets/images/review_avatar-female.svg'
 function Reviews() {
   return (
 
-    <section class="page_reviews container padding-rl">
+    <section className="page_reviews container padding-rl">
         <h2>Clients are Loving Our App</h2> 
-        <div class="review">
-            <div class="review_comma">
+        <div className="review">
+            <div className="review_comma">
                 <img src={comma} alt="quotation marks." />
             </div>
-            <div class="review_stars">
+            <div className="review_stars">
                 <img src={checkedStar} alt="One-star review." />
                 <img src={checkedStar} alt="two-star review." />
                 <img src={checkedStar} alt="three-star review." />
@@ -23,7 +23,7 @@ function Reviews() {
 
             </div>
             <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
-            <div class="review_avatar">
+            <div className="review_avatar">
                 <img src={femaleAvatar} alt="Picture of Fannie." />
                 <div>
                     <h6>Fannie Summers</h6>
@@ -31,11 +31,11 @@ function Reviews() {
                 </div>
             </div>
         </div>
-        <div class="review">
-            <div class="review_comma">
+        <div className="review">
+            <div className="review_comma">
                 <img src={comma} alt="quotation marks." />
             </div>
-            <div class="review_stars">
+            <div className="review_stars">
                 <img src={checkedStar} alt="One-star review."/>
                 <img src={checkedStar} alt="two-star review."/>
                 <img src={checkedStar} alt="three-star review."/>
@@ -44,7 +44,7 @@ function Reviews() {
 
             </div>
             <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
-            <div class="review_avatar">
+            <div className="review_avatar">
                 <img src={maleAvatar} alt="Picture of Albert."/>
                 <div>
                     <h6>Albert Flores</h6>

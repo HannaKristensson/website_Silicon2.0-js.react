@@ -7,12 +7,6 @@ regForm.addEventListener('submit', e => {
     const email = document.querySelector('#email').value ;
 
 
-
-
-
-
-
-
     validateEmail(email)
 
     
@@ -33,3 +27,5 @@ const validateEmail = (email) => {
     }
     return true
 } 
+
+

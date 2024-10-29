@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import appStore from '../assets/images/appstore.svg'
 import appStoreDark from '../assets/images/appstore-dark.svg'
 import googlePlay from '../assets/images/googlePlay.svg'

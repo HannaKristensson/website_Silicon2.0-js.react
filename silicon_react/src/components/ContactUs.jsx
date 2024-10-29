@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ConsultForm from './ContactConsultForm/ConsultForm' 
+import ConsultForm from './ContactConsultForm/ConsultForm.jsx' 
 
 import contactMail from '../assets/images/contact/contact_mail.svg'
 import contactAddUser from '../assets/images/contact/contact_add_user.svg'

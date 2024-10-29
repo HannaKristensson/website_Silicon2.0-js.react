@@ -1,19 +1,20 @@
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../assets/images/logotype.svg'
 import logolight from '../assets/images/logotype_light.svg'
 
 function Header() {
   return (
-    
     <>
     <header>
         <div className="container padding-rl">
-            <a id="logo" href="index.html">
+            <NavLink id="logo" to={"/home"}>
                 <img src={logo} alt="Silicon Logotype." className="logo_dark image" />
                 <img src={logolight} alt="Silicon Logotype." className="logo_light image"/>
-            </a>
+            </NavLink>
             <nav id="main-menu" className="navbar">
-                <a className="nav-link" href="#"><p>Features</p></a>
+                <NavLink className="nav-link" to={"/"}><p>Features</p></NavLink>
+                <NavLink className="nav-link" to={"/contact"}><p>Contact</p></NavLink>
             </nav>
             <div id="break"></div>
 
@@ -39,9 +40,7 @@ function Header() {
 
     </header>
     </>
-
-    
-    
+       
   )
 }
 

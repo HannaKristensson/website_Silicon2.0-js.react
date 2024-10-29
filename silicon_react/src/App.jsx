@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './assets/css/stylesheet.css'
 import './assets/css/contact.css'
 import Home from './Pages/Home'
-import Contact from './Pages/Contact'
+import ContactUs from './Pages/Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -17,8 +17,8 @@ function App() {
     < Header />
       <main>
         <Routes>
-          <Route path="/"  element={< Home />} />
-          <Route path="/Contact"  element={< Contact />} />
+          <Route path="/home"  element={< Home />} />
+          <Route path="/Contact"  element={< ContactUs />} />
         </Routes>
       </main>
     < Footer />

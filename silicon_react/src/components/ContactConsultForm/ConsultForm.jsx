@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ConsulthtmlForm() {
+function ConsultForm() {
   return (
       <htmlForm action="" className="consult_htmlForm htmlForm_primary">
         <label htmlFor="">Full name</label>
@@ -17,4 +17,4 @@ function ConsulthtmlForm() {
   )
 }
 
-export default ConsulthtmlForm
+export default ConsultForm
