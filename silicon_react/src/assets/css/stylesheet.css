@@ -110,6 +110,21 @@ input::placeholder {
     font-family: fontAwesome, "Manrope", sans-serif;
 }
 
+.invalid_input {
+    color: firebrick;
+    font-size: .9rem;
+    display: none;
+}
+
+.error {
+    .form-input {
+        border-color: firebrick;
+    }
+    .invalid-input {
+        display: block;
+    }
+}
+
 li {
     color: var(--color-breadtext);
 }

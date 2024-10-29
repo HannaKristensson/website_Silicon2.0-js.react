@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
+import ConsultForm from './ContactConsultForm/ConsultForm' 
+
 import contactMail from '../assets/images/contact/contact_mail.svg'
 import contactAddUser from '../assets/images/contact/contact_add_user.svg'
-
-import { Link } from 'react-router-dom';
 
 
 
@@ -53,11 +54,7 @@ function Contacts() {
 
     <div className="consult_box" id="consult_box">
     <h3>Get Online Consultation</h3>
-    <div>
- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis veritatis voluptatibus reprehenderit quidem autem, quis quia iste, voluptas, delectus mollitia earum minus odit aliquam voluptate? Assumenda, at? Voluptates dignissimos similique voluptate earum rerum. Itaque quod, adipisci earum a modi, dolor ratione repellat, optio mollitia voluptatum voluptas veritatis animi impedit architecto dolore? Pariatur repellat hic iusto ut eaque dolore voluptatem exercitationem odio consequatur eos animi eius nemo, numquam voluptates sit dolorem fugiat labore, doloribus eligendi! Minima aliquid, cumque magni qui neque,</p>
-
-    </div>
-    {/* consult form */}
+    < ConsultForm />
     </div>
 
   </section>
