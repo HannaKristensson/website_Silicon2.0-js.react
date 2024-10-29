@@ -1,5 +1,6 @@
 import call from '../assets/images/questions_call.svg'
 import text from '../assets/images/questions_text.svg'
+import QuestionsList from './QuestionsList'
 
 function Questions() {
   return (
@@ -13,6 +14,7 @@ function Questions() {
         </div>
 
         {/* accordion */}
+        < QuestionsList />
 
         <a href="#">
             <button className="btn_primary">Contact us now</button>
