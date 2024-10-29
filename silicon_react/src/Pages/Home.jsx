@@ -12,16 +12,16 @@ import HomeNewsletter from '../components/HomeNewsletter'
 const Home = () => {
   return (
     <>
-    <div class="gradient">
+    <div className="gradient">
         < HomeFrontpage />
     </div>
     < HomeBrandbox /> 
     < HomeFeatures />
-    <div class="background-clr">
+    <div className="background-clr">
       < HomeHow />
     </div>
     < HomeTransferReceive />
-    <div class="background-clr page_reviews">
+    <div className="background-clr page_reviews">
       < HomeReviews />
     </div>
     < HomeQuestions />

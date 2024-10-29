@@ -11,11 +11,11 @@ function QuestionsList() {
         setQuestionsItems(data)
     }
 
-    useEffect(() => {
-        fetchData()
+    // useEffect(() => {
+    //     fetchData()
 
 
-    }, [])
+    // }, [])
 
   return (
     <div className='questions'>
