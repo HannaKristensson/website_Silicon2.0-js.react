@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
 
 const ConsultForm = () => {
-  const [formData, setFormData] = useState({ fullName: '', email: '', specialist: 'Doctor', });
+  const [formData, setFormData] = useState({ fullName: '', email: '', specialist: 'Options', });
   const [submissionStatus, setSubmissionStatus] = useState('');
+
+  const [isError, setIsError] = useState('')
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({...formData, [name]: value});
-  }
+
+
+
+    if (value.trim() === '') {
+      setIsError = ('empty_input');
+    } else {
+      setIsError = ('');
+    }
+
+
+
+
+    }
+  
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,17 +32,16 @@ const ConsultForm = () => {
       method: 'POST',
       headers: { 'content-Type': 'application/json'
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(formData)
       });
 
 
       if (res.ok) {
-        setSubmissionStatus('Successfull!');
-        setFormData({ fullName: '', email: '', specialist: 'Doctor' });
+        setSubmissionStatus('Thank you for your message!');
+        setFormData({ fullName: '', email: '', specialist: 'Options' });
         console.log('Everything was successfull')
       } else {
-        setSubmissionStatus('Something went wrong.');
-        alert('Something went wrong..');
+        setSubmissionStatus('Something went wrong, make sure to fill both textfields.');
       }
 
       
@@ -47,18 +62,19 @@ const ConsultForm = () => {
 
   
   return (
-      <form className="consult_form form_primary" onSubmit={handleSubmit} >
+      <form className="consult_form form_primary" onSubmit={handleSubmit} noValidate >
         <label htmlFor="fullName">Full name</label>
-        <input type="text" name="fullName" defaultValue={formData.fullName} onChange={handleInputChange} required />
+        <input className={isError === 'empty_input' ? 'error' : '' }  type="text" name="fullName" defaultValue={formData.fullName} onChange={handleInputChange} required />
         <label htmlFor="email">Email address</label>
         <input type="email" name="email" defaultValue={formData.email} onChange={handleInputChange} required/>
         <label htmlFor="specialist">Specialist</label>
         <select id="specialistSelect" name="specialist" defaultValue={formData.specialist} onChange={handleInputChange} required>
-          <option value="doc">Doctor</option>
+          <option value="opt">Options</option> 
+          <option value="doc">Doctor</option> 
           <option value="prog">Programmer</option>
         </select>
-        <button className="btn_primary" id="consult_submit">Make an appointment</button>
         {submissionStatus && <p>{submissionStatus}</p>}
+        <button className="btn_primary" id="consult_submit">Make an appointment</button>
       </form>
   )
 }

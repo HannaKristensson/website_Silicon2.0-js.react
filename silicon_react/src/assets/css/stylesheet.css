@@ -116,6 +116,10 @@ input::placeholder {
     display: none;
 }
 
+.empty_input {
+    border: 1px solid firebrick;
+}
+
 .error {
     .form-input {
         border-color: firebrick;
