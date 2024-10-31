@@ -1,8 +1,8 @@
-:root[data-theme= 'dark']  {
-    --color-dark: blue;
-    --color-primary: yellow;
+:root[data-theme="light"] {
+    --color-dark: #0B0F19;
+    --color-primary: #6366F1;
     --color-success: #22C55E;
-    --txtclr-heading: blue;
+    --txtclr-heading: #131022;
     --color-gray900: #0B0F19;
     --color-gray800: #33354D;
     --color-gray700: #565973;

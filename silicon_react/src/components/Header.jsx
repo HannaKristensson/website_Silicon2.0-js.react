@@ -2,8 +2,12 @@ import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../assets/images/logotype.svg'
 import logolight from '../assets/images/logotype_light.svg'
+import DarkModeSwitch from './DarkModeSwitch';
 
 function Header() {
+    // const [showMenu, se*]
+
+
   return (
     <>
     <header>
@@ -18,13 +22,8 @@ function Header() {
             </nav>
             <div id="break"></div>
 
-            <div id="btn-toggle-switch" className="btn-toggle-switch">
-                <span className="label">Dark Mode</span>
-                <label htmlFor="darkmode-switch" className="toggle-switch" tabIndex="0">
-                    <input id="darkmode-switch" type="checkbox"/>
-                    <span className="slider round"></span>
-                </label>
-            </div>
+            < DarkModeSwitch />
+
             <div>
                 <a id="sign-in" href="#" className="btn_primary sign-in">
                     <i className="fa-light fa-user-large"></i>
