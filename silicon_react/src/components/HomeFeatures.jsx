@@ -24,7 +24,7 @@ function Features() {
 
 
         <div className="features" id="feature-1">
-            <div className="feature_img " id="feature_img ">
+            <div className="square_icon" id="feature_img ">
               <img src={featureImg1} alt="Creditcard." />  
             </div>
             <div id="feature_text">
@@ -34,7 +34,7 @@ function Features() {
             </div>
         </div>
         <div className="features" id="feature-2">
-            <div className="feature_img" id="feature_img ">
+            <div className="square_icon" id="feature_img ">
               <img src={featureImg2} alt="sheild." />  
             </div>
             <div id="feature_text">
@@ -45,7 +45,7 @@ function Features() {
             </div>
         </div>
         <div className="features" id="feature-3">
-            <div className="feature_img " id="feature_img ">
+            <div className="square_icon" id="feature_img ">
               <img src={featureImg3} alt="Graph." />  
             </div>
             <div id="feature_text">
@@ -55,7 +55,7 @@ function Features() {
             </div>
         </div>
         <div className="features" id="feature-4">
-            <div className="feature_img " id="feature_img ">
+            <div className="square_icon" id="feature_img ">
               <img src={featureImg4} alt="Speech bubbles with question marks." />  
             </div>
             <div id="feature_text">
@@ -65,7 +65,7 @@ function Features() {
             </div>
         </div>
         <div className="features" id="feature-5">
-            <div className="feature_img " id="feature_img ">
+            <div className="square_icon " id="feature_img ">
               <img src={featureImg5} alt="Wallet." />  
             </div>
             <div id="feature_text">
@@ -76,7 +76,7 @@ function Features() {
             </div>
         </div>
         <div className="features" id="feature-6">
-            <div className="feature_img " id="feature_img ">
+            <div className="square_icon" id="feature_img ">
               <img src={featureImg6} alt="Happy smiley." />  
             </div>
             <div id="feature_text">

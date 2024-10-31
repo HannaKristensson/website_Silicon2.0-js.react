@@ -66,9 +66,9 @@ const ConsultForm = () => {
         <label htmlFor="fullName">Full name</label>
         {/* <input className={isError === 'empty_input' ? 'error' : '' }  type="text" name="fullName" defaultValue={formData.fullName} onChange={handleInputChange} required /> */}
         <label htmlFor="email">Email address</label>
-        <input type="email" name="email" defaultValue={formData.email} onChange={handleInputChange} required/>
+        <input className="Subscribe_input" type="email" name="email" defaultValue={formData.email} onChange={handleInputChange} required/>
         <label htmlFor="specialist">Specialist</label>
-        <select id="specialistSelect" name="specialist" defaultValue={formData.specialist} onChange={handleInputChange} required>
+        <select className="Subscribe_input" id="specialistSelect" name="specialist" defaultValue={formData.specialist} onChange={handleInputChange} required>
           <option value="opt">Options</option> 
           <option value="doc">Doctor</option> 
           <option value="prog">Programmer</option>

@@ -12,8 +12,31 @@
     --color-gray300: #E2E5F1;
     --color-gray200: #EFF2FC;
     --color-gray100: #F3F6FF;
+    --color-text: 
     --color-breadtext: #585C7B;
     --color-white: #fff;
+
+    --btn-primary-active: hsla(239, 70%, 56%, 0.1);
+    --btn-primary-hover: transparent;
+    --btn-arrow: #fff;
+    --btn-arrow-hover: #6366F1;
+    --btn-arrow-active: #4f51d6;
+    --btn-appbtn: #131022;
+    --btn-appbtn-hover: 0px 8px 18px -8px #131022;
+
+    --icon-features: #F3F6FF;
+
+    --clr-bg: #fff;
+    --clr-bg-secondary: #F3F6FF;
+    --clr-bg-gradient: rgb(99,102,241);
+    --clr-bg-gradient2: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    --clr-bg-review: #fff;
+    --clr-bg-accordion: #fff;
+    --clr-border-accordion: #E2E5F1;
+    --clr-bg-form: #F3F6FF;
+    --clr-border-question: #E2E5F1;
+     --clr-bg-input: #fff;
+    --clr-border-input: #D4D7E5;
 
     --container-padding: 1rem;
     --fontsize-18: 18px;
