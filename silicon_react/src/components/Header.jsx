@@ -8,7 +8,7 @@ function Header() {
     <>
     <header>
         <div className="container padding-rl">
-            <NavLink id="logo" to={"/home"}>
+            <NavLink id="logo" to={"/"}>
                 <img src={logo} alt="Silicon Logotype." className="logo_dark image" />
                 <img src={logolight} alt="Silicon Logotype." className="logo_light image"/>
             </NavLink>

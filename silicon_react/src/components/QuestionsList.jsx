@@ -6,16 +6,14 @@ function QuestionsList() {
     const [questionsItems , setQuestionsItems] = useState([])
 
     const fetchData = async () => {
-        const res = await fetch('')
+        const res = await fetch('https://win24-assignment.azurewebsites.net/api/faq')
         const data = await res.json()
         setQuestionsItems(data)
     }
 
-    // useEffect(() => {
-    //     fetchData()
-
-
-    // }, [])
+    useEffect(() => {
+        fetchData()
+    }, [])
 
   return (
     <div className='questions'>

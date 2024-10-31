@@ -4,7 +4,7 @@ const ConsultForm = () => {
   const [formData, setFormData] = useState({ fullName: '', email: '', specialist: 'Options', });
   const [submissionStatus, setSubmissionStatus] = useState('');
 
-  const [isError, setIsError] = useState('')
+  // const [isError, setIsError] = useState('')
 
 
   const handleInputChange = (e) => {
@@ -13,11 +13,11 @@ const ConsultForm = () => {
 
 
 
-    if (value.trim() === '') {
-      setIsError = ('empty_input');
-    } else {
-      setIsError = ('');
-    }
+    // if (value.trim() === '') {
+    //   setIsError = ('empty_input');
+    // } else {
+    //   setIsError = ('');
+    // }
 
 
 
@@ -64,7 +64,7 @@ const ConsultForm = () => {
   return (
       <form className="consult_form form_primary" onSubmit={handleSubmit} noValidate >
         <label htmlFor="fullName">Full name</label>
-        <input className={isError === 'empty_input' ? 'error' : '' }  type="text" name="fullName" defaultValue={formData.fullName} onChange={handleInputChange} required />
+        {/* <input className={isError === 'empty_input' ? 'error' : '' }  type="text" name="fullName" defaultValue={formData.fullName} onChange={handleInputChange} required /> */}
         <label htmlFor="email">Email address</label>
         <input type="email" name="email" defaultValue={formData.email} onChange={handleInputChange} required/>
         <label htmlFor="specialist">Specialist</label>

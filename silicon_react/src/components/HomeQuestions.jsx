@@ -13,8 +13,9 @@ function Questions() {
         <p>Still have unanswered questions and need to get in touch?</p>
         </div>
 
-        {/* accordion */}
-        < QuestionsList />
+        <nav class="accordion">
+            < QuestionsList />
+        </nav>
 
         <a href="#">
             <button className="btn_primary">Contact us now</button>
