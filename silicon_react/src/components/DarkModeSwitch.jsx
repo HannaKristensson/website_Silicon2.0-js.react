@@ -10,9 +10,11 @@ function DarkModeSwitch() {
         if (newMode) {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark')
+            document.body.classList.add('darkmode');
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
+            document.body.classList.remove('darkmode');
         }
     };
 
