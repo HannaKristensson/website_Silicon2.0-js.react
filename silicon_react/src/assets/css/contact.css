@@ -82,6 +82,7 @@ a {
 
     p {
         margin: 1rem 0;
+        color: #585C7B;
     }
 }
 
@@ -105,6 +106,20 @@ gap: .8rem;
     border-radius: 8px;
     
 }
+
+.form_consult {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    button {
+        margin-top: 3rem;
+        @media (min-width: 1200px) {
+            margin-top: 7rem;  
+        }
+    }
+}
+
 
 
 /* SECTION TWO - DIRECTIONS  */

@@ -30,12 +30,7 @@ function DarkModeSwitch() {
     }, [])
 
 
-
-
-    
-
   return (
- 
 
     <div className="btn-toggle-switch">
     <span className="label">Dark Mode</span>
@@ -44,23 +39,7 @@ function DarkModeSwitch() {
         <span className="slider round"></span>
     </label>
 </div>
-//     <div id="btn-toggle-switch" className="btn-toggle-switch">
-//     <span className="label">Dark Mode</span>
-//     <label htmlFor="darkmode-switch" className="toggle-switch" tabIndex="0">
-//         <input id="darkmode-switch" type="checkbox"/>
-//         <span className="slider round"></span>
-//     </label>
-// </div>
 
-
-
-    // <div id="btn-toggle-switch" className="btn-toggle-switch">
-    //     <span className="label">Dark Mode</span>
-    //     <label htmlFor="darkmode-switch" className="toggle-switch" tabIndex="0">
-    //         <input type="checkbox" class="toggle-switch" checked={isDarkMode} onChange={toggleDarkMode} />
-    //         <span className="slider round"></span>
-    //     </label>
-    // </div>
   )
 }
 

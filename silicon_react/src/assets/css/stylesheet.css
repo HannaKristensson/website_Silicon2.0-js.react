@@ -33,12 +33,10 @@ a {
 
 a:hover {
     color: var(--color-primary);
-    text-decoration: underline;
 }
 
 h1 {
     font-size: 2.5rem;
-    /* line-height: 2.775rem; */
 }
 
 h2 {
@@ -96,31 +94,6 @@ p, h1, h2, h3, h4, h5, a, .btn-mobile {
     font-size: 0.875rem;
 }
 
-input::placeholder {
-    color: var(--color-gray500);
-    font-size: var(--fontsize-16);
-    font-family: fontAwesome, "Manrope", sans-serif;
-}
-
-.invalid_input {
-    color: firebrick;
-    font-size: .9rem;
-    display: none;
-}
-
-.empty_input {
-    border: 1px solid firebrick;
-}
-
-.error {
-    .form-input {
-        border-color: firebrick;
-    }
-    .invalid-input {
-        display: block;
-    }
-}
-
 li {
     color: var(--color-breadtext);
 }
@@ -158,31 +131,81 @@ button {
     background-color: var(--btn-primary-active);
 }
 
+.link_primary {
+    font-size: var(--fontsize-14);
+    color: var(--color-primary);
+    font-weight: 600;
+    gap: .7rem;
+    display:flex;
+    align-items: center;
+    margin-bottom: .5rem;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+
+
 .form_primary {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    width: 100%;
     font-size: .9rem;
     font-weight: 600;
     color: var(--color-gray900);
-
+    
     input, select {
         font-size: 1.125rem;
+        color: var(--clr-txt-input);
         padding: .5rem .8rem;
         width: 100%;
         margin-bottom: 1.3rem;
-        border:1px solid var(--color-gray400);
+        border: 1px solid var(--clr-border-input);
         border-radius: 8px;
+        background-color: var(--clr-bg-input);
+        outline: none;
+        transition: 0.3s;
     }
 
+    input:focus, select:focus {
+        border: 1px solid hsla(239, 84%, 67%, 0.5);
+        box-shadow: 0px 8px 18px -8px hsla(239, 84%, 67%, 0.4);
+    }
+    
     button {
         font-size: 1rem;
-        margin-top: 3rem;
         padding: .8rem;
 
-        @media (min-width: 1200px) {
-            margin-top: 7rem;  
-        }
+    }
+}
+
+input::placeholder {
+    color: var(--clr-placeholder-input);
+    font-size: var(--fontsize-16);
+    font-family: fontAwesome, "Manrope", sans-serif;
+}
+
+.invalid_input {
+    color: firebrick;
+    font-size: .9rem;
+    display: none;
+}
+
+.empty_input {
+    border: 1px solid firebrick;
+}
+
+.error {
+    .form-input {
+        border-color: firebrick;
+    }
+    .invalid-input {
+        display: block;
     }
 }
 
@@ -233,6 +256,19 @@ header .container {
 
 .navbar {
     display: none;
+}
+
+.navlink {
+    p {
+        color: var(--color-navlink);
+        font-weight: 600;
+    }
+    
+    p:hover {
+        cursor: pointer;
+        color: var(--color-primary);
+        text-decoration: none;
+    }
 }
 
 .btn-mobile {
@@ -331,17 +367,7 @@ header .container {
     text-decoration: none;
 }
 
-.nav-link {
-    font-size: var(--fontsize-16);
-    font-weight: 600;
-    color: var(--color-gray800);
-    text-decoration: none;
-}
 
-.nav-link:hover {
-    color: var(--color-primary);
-    text-decoration: none;
-}
 
 
 /* PAGE ONE */
@@ -905,15 +931,6 @@ header .container {
 
 }
 
-.questions_nav {
-    display:flex;
-    font-size: var(--fontsize-14);
-    font-weight: 600;
-    gap: .7rem;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: .5rem;
-}
 
 .questions_call-txt {
     Display: flex;
@@ -925,26 +942,16 @@ header .container {
     width: 100%;
     gap: 1.2rem;
 
-    nav {
-        color: var(--color-primary);
-    }
-
-    nav:hover {
-        cursor: pointer;
-        text-decoration: underline;
-    }
-
     img {
         height: 1.75rem;
     }
 }
 
 .questions_txt {
-    nav {
+    a {
         color: var(--color-success);
     }
 }
-
 
 
 /* PAGE SEVEN - Newsletter */
@@ -952,7 +959,7 @@ header .container {
     display:grid;
     align-items: center;
     text-align: left;
-    background-color: var(--clr-bg-form);
+    background-color: #F3F6FF;;
     border-radius: 8px;
     padding: 3rem 1rem;
     gap: 2rem;
@@ -986,6 +993,12 @@ header .container {
     grid-column: 1/4;
     grid-row: 2/3;
 
+    input {
+        padding-left: 1rem;
+        border-radius: 8px 0px 0px 8px;
+        margin-bottom: 0;
+    }
+
     .btn_primary {
         width: 7rem;
         height: 3.25rem;
@@ -995,25 +1008,6 @@ header .container {
     }
 }
 
-.Subscribe_input {
-    background-color: var(--clr-bg-input);
-    border: 1px solid var(--clr-border-input);
-}
-
-input[type=email] {
-    width: 100%;
-    color: var(--color-gray700);
-    font-size: var(--fontsize-16);
-    font-family: fontAwesome, "Manrope", sans-serif;
-    border-radius: 8px 0px 0px 8px;
-    outline: none;
-    transition: 0.3s;
-}
-
-input[type=email]:focus {
-    border: 1px solid hsla(239, 84%, 67%, 0.5);
-    box-shadow: 0px 8px 18px -8px hsla(239, 84%, 67%, 0.4);
-}
 
 .Subscribe_letter  {
     position: absolute;
@@ -1021,11 +1015,6 @@ input[type=email]:focus {
     left: 1rem;
     transform: translate(-50%, -50%);
 }
-
-.email_in {
-    padding-left: 1rem;
-}
-
 
 
 /* FOOTER */
@@ -1218,6 +1207,10 @@ header .container {
     }
 }
 
+.questions_contact {
+    display: flex;
+}
+
 .question_text {
     max-width: 420px;
 
@@ -1263,10 +1256,6 @@ header .container {
     border-radius: 0px 0px 8px 8px;
     padding: 1.3rem;
     padding-top: 0;
-}
-
-.questions_contact {
-    display: flex;
 }
 
 

@@ -15,6 +15,7 @@
     --color-text: #fff;
     --color-breadtext: #585C7B;
     --color-white: #fff;
+    --color-navlink: white;
 
     --btn-primary-hover: transparent;
     --btn-primary-active: hsla(239, 70%, 56%, 0.3);
@@ -37,6 +38,8 @@
     --clr-border-question: rgba(255, 255, 255, 0.15);
     --clr-bg-input: rgba(255, 255, 255, 0.02);
     --clr-border-input: rgba(255, 255, 255, 0.18);
+    --clr-txt-input: #B4B7C9;
+    --clr-placeholder-input: #565973;
 
     --container-padding: 1rem;
     --fontsize-18: 18px;
@@ -48,175 +51,202 @@
 
 
 .darkmode {
-    /* HEADER */
-    .logo_dark {
+
+.form_primary {
+    option {
+        background-color: #0B0F19;
+    }
+    option:hover {
+        background-color: #22C55E;
+    }
+}
+
+/* FRONTPAGE */
+/* HEADER */
+.navlink {
+    color: --color-navlink;
+}
+
+.logo_dark {
+    display: none;
+}
+
+.logo_light {
+    display: block;
+}
+
+
+/* PAGE ONE */
+.appimg-light {
+    display: none;
+}
+
+.appimg-dark {
+    display: block;
+}
+
+.discover-btn {
+    p {
+            opacity: 70%;
+        }
+    .img {
+        opacity: none;
+    }
+}
+
+.vectorarrow {
+    .arrow-dark {
         display: none;
     }
-    
-    .logo_light {
+    .arrow-light {
         display: block;
     }
+}
 
-    
+/* PAGE TWO */
+.page_features {
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* PAGE THREE */
+.page_how {
+    p {
+        color: var(--color-breadtext);
+    }
+}
+
+/* PAGE FOUR */
+.page_transfer-receive {
+    li {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* PAGE FIVE */
+.review {
+    h6 {
+        color:var(--color-white);
+    }
+}
+
+/* PAGE SIX */
+.question_text {
+    p {
+        color: var(--color-breadtext);
+    }
+}
+
+.accordion {
+    label {
+        color: var(--color-white);
+    }
+}
+
+.acc_content {
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+label::after {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+
+.questions_call-txt {
+    p {
+        color: var(--color-gray700);
+    }
+
+}
+
+/* PAGE SEVEN */
+.page_news { 
+    background-color: var(--clr-bg-form);
+}
+
+
+/* FOOTER */
+footer {
+    p {
+        color: var(--color-gray600)
+    }
+}
+
+
+/* CONTACT-PAGE */
+/* Consult-form */
+/* .consult_box {
+    form {
+        color: var(--color-gray600);
+    }
+    input {
+        border-color: var(--color-gray600);
+    }
+} */
+
+@media ( min-width: 768px ) {
     /* PAGE ONE */
-    .appimg-light {
-        display: none;
-    }
-    
-    .appimg-dark {
-        display: block;
-    }
-    
-    .discover-btn {
+    .maintext {
         p {
-             opacity: 70%;
-            }
-        .img {
-            opacity: none;
+            color: var(--color-breadtext);
         }
     }
 
-    .vectorarrow {
-        .arrow-dark {
-            display: none;
+    /* BRANDBOX */
+    .brand-box {
+        background-color: var(--txtclr-heading);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* PAGE SEVEN */
+    .accordion {
+        label {
+            background-color: rgba(255, 255, 255, 0.04);
         }
-        .arrow-light {
-            display: block;
+        input:checked + label  {
+            border-radius: 8px 8px 0px 0px;
+            
+        }
+    }
+    
+    .accordion_box {
+        border-radius: 0;
+    }
+
+    .acc_content {
+        background-color: rgba(255, 255, 255, 0.04);
+        
+    }
+}
+
+@media (min-width : 1200px) {
+    .maintext {
+        p {
+            color: rgba(255, 255, 255, 0.7);
         }
     }
 
     /* PAGE TWO */
     .page_features {
         p {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.5);
         }
     }
 
     /* PAGE THREE */
     .page_how {
         p {
-            color: var(--color-breadtext);
-        }
-    }
-    
-    /* PAGE FOUR */
-    .page_transfer-receive {
-        li {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        p {
             color: rgba(255, 255, 255, 0.7);
         }
     }
-
-    /* PAGE FIVE */
-    .review {
-        h6 {
-            color:var(--color-white);
-        }
-    }
-
-    /* PAGE SIX */
-    .question_text {
-        p {
-            color: var(--color-breadtext);
-        }
-    }
-
-    .accordion {
-        label {
-            color: var(--color-white);
-        }
-    }
-
-    .acc_content {
-        p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-    }
-
-    label::after {
-        background-color: rgba(255, 255, 255, 0.05);
-        color: white;
-    }
-
-    
-    .questions_call-txt {
-        p {
-            color: var(--color-gray700);
-        }
-
-    }
-
-    /* PAGE SEVEN */
-    input[type=email]:focus {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    /* FOOTER */
-    footer {
-        p {
-            color: var(--color-gray600)
-        }
-    }
-
-
-    @media ( min-width: 768px ) {
-        /* PAGE ONE */
-        .maintext {
-            p {
-                color: var(--color-breadtext);
-            }
-        }
-
-        /* BRANDBOX */
-        .brand-box {
-            background-color: var(--txtclr-heading);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        /* PAGE SEVEN */
-        .accordion {
-            label {
-                background-color: rgba(255, 255, 255, 0.04);
-            }
-            input:checked + label  {
-                border-radius: 8px 8px 0px 0px;
-                
-            }
-        }
-        
-        .accordion_box {
-            border-radius: 0;
-        }
-
-        .acc_content {
-            background-color: rgba(255, 255, 255, 0.04);
-            
-        }
-    }
-
-    @media (min-width : 1200px) {
-        .maintext {
-            p {
-                color: rgba(255, 255, 255, 0.7);
-            }
-        }
-
-        /* PAGE TWO */
-        .page_features {
-            p {
-                color: rgba(255, 255, 255, 0.5);
-            }
-        }
-
-        /* PAGE THREE */
-        .page_how {
-            p {
-                color: rgba(255, 255, 255, 0.7);
-            }
-        }
-    }
+}
 
     
     

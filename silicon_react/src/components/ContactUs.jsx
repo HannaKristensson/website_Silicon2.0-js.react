@@ -27,7 +27,7 @@ function Contacts() {
         <div>
           <h4>Email Us</h4>
           <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-          <Link to={'/'} className="contact_linktxt" >
+          <Link to={'/'} className="link_primary" >
           Leave a message 
           <i className="fa-solid fa-arrow-right"></i>
           </Link>
@@ -42,7 +42,7 @@ function Contacts() {
         <div>
         <h4>Careers</h4>
         <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-          <Link to={'/'} className="contact_linktxt" >
+          <Link to={'/'} className="link_primary" >
           Send an application 
           <i className="fa-solid fa-arrow-right"></i>
           </Link>

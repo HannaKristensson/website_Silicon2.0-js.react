@@ -12,9 +12,9 @@
     --color-gray300: #E2E5F1;
     --color-gray200: #EFF2FC;
     --color-gray100: #F3F6FF;
-    --color-text: 
     --color-breadtext: #585C7B;
     --color-white: #fff;
+    --color-navlink: #33354D;
 
     --btn-primary-active: hsla(239, 70%, 56%, 0.1);
     --btn-primary-hover: transparent;
@@ -33,10 +33,12 @@
     --clr-bg-review: #fff;
     --clr-bg-accordion: #fff;
     --clr-border-accordion: #E2E5F1;
-    --clr-bg-form: #F3F6FF;
+    --clr-bg-form: ehite;
     --clr-border-question: #E2E5F1;
      --clr-bg-input: #fff;
     --clr-border-input: #D4D7E5;
+    --clr-txt-input: #565973;
+    --clr-placeholder-input: #B4B7C9;
 
     --container-padding: 1rem;
     --fontsize-18: 18px;

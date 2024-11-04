@@ -17,8 +17,8 @@ function Header() {
                 <img src={logolight} alt="Silicon Logotype." className="logo_light image"/>
             </NavLink>
             <nav id="main-menu" className="navbar">
-                <NavLink className="nav-link" to={"/"}><p>Features</p></NavLink>
-                <NavLink className="nav-link" to={"/contact"}><p>Contact</p></NavLink>
+                <NavLink className="navlink" to={"/"}><p>Features</p></NavLink>
+                <NavLink className="navlink" to={"/contact"}><p>Contact</p></NavLink>
             </nav>
             <div id="break"></div>
 

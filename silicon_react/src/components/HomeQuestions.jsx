@@ -24,14 +24,14 @@ function Questions() {
             <div className="questions_call-txt">
                 <img src={call} alt="Phone handset."/>
                 <p>Still have  questions?</p>
-                <a href="#" className="questions_nav" >Contact us
+                <a href="#" className="link_primary" >Contact us
                     <i className="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
             <div className="questions_call-txt questions_txt" >
                 <img src={text} alt="Chat bubble." />
                 <p>Don't like phone calls?</p>
-                <a href="#" className="questions_nav" >
+                <a href="#" className="link_primary" >
                     Contact us
                     <i className="fa-solid fa-arrow-right"></i>
                 </a>
