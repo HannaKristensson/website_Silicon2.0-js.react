@@ -1,7 +1,6 @@
 :root[data-theme="light"] {
     --color-dark: #0B0F19;
     --color-primary: #6366F1;
-    --color-success: #22C55E;
     --txtclr-heading: #131022;
     --color-gray900: #0B0F19;
     --color-gray800: #33354D;
@@ -15,6 +14,12 @@
     --color-breadtext: #585C7B;
     --color-white: #fff;
     --color-navlink: #33354D;
+    
+    --color-error: #EF4444;
+    --color-error-bg: hsla(0, 84%, 60%, 0.12);
+    --color-success: #22C55E;
+    --color-success-bg: hsla(142, 71%, 45%, 0.12);
+
 
     --btn-primary-active: hsla(239, 70%, 56%, 0.1);
     --btn-primary-hover: transparent;

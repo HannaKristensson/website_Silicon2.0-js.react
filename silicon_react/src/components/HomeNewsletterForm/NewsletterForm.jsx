@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function NewsletterForm() {
   const [formData, setFormData] = useState({ email: '', });
+  const [errors, setErrors] = useState({});
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -45,8 +46,8 @@ function NewsletterForm() {
 
 
   return (
-    <form className="Subscribe_box form_primary" id="newsForm" onSubmit={handleSubmit}>
-        <input className="" type="email" name="email"   placeholder="&#xf0e0;   Your email" defaultValue={formData.email} onChange={handleInputChange} required/>
+    <form className="Subscribe_box form_primary" id="newsForm" onSubmit={handleSubmit} noValidate>
+        <input type="email" name="email" placeholder="&#xf0e0;   Your email" defaultValue={formData.email} onChange={handleInputChange} required/>
         <button className="btn_primary btn-pri" id="newsletter_submitBtn">Subscribe</button>
     </form>
   )

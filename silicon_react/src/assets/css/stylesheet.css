@@ -146,13 +146,6 @@ button {
     }
 }
 
-
-
-
-
-
-
-
 .form_primary {
     width: 100%;
     font-size: .9rem;
@@ -164,12 +157,16 @@ button {
         color: var(--clr-txt-input);
         padding: .5rem .8rem;
         width: 100%;
-        margin-bottom: 1.3rem;
+        margin-bottom: .3rem;
         border: 1px solid var(--clr-border-input);
         border-radius: 8px;
         background-color: var(--clr-bg-input);
         outline: none;
         transition: 0.3s;
+    }
+    
+    label {
+        margin-top: 1rem;
     }
 
     input:focus, select:focus {
@@ -180,7 +177,6 @@ button {
     button {
         font-size: 1rem;
         padding: .8rem;
-
     }
 }
 
@@ -190,13 +186,31 @@ input::placeholder {
     font-family: fontAwesome, "Manrope", sans-serif;
 }
 
-.invalid_input {
-    color: firebrick;
-    font-size: .9rem;
-    display: none;
+
+.valid_input {
+    color: var(--color-sucess);
+    font-size: .75rem;
+    font-weight: 500;
+    background-color: var(--color-sucess-bg);
+    padding: 1px 6px;
+    width: fit-content;
+    border-radius: 4px;
+    /* display: none; */
 }
 
-.empty_input {
+.invalid_input {
+    color: var(--color-error);
+    font-size: .75rem;
+    font-weight: 500;
+    background-color: var(--color-error-bg);
+    padding: 1px 6px;
+    width: fit-content;
+    border-radius: 4px;
+    /* display: none; */
+}
+
+
+/* .empty_input {
     border: 1px solid firebrick;
 }
 
@@ -207,7 +221,7 @@ input::placeholder {
     .invalid-input {
         display: block;
     }
-}
+} */
 
 
 .container {
