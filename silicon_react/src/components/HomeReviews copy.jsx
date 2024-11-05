@@ -3,35 +3,33 @@ import uncheckedStar from '../assets/images/review_star-unchecked.svg'
 import comma from '../assets/images/review_comma.svg'
 import maleAvatar from '../assets/images/review_avatar-male.svg'
 import femaleAvatar from '../assets/images/review_avatar-female.svg'
-import { useParams } from 'react-router-dom'
-import { useContext } from 'react'
-import { ReviewContext } from '../contexts/ReviewContext'
 
 
 function Reviews() {
-
-    const { tag } = useParams()
-    const { reviews, review } = useContext(ReviewContext)
-
-    const filteredReviews = reviews.filter(review => review.tags && review.tags.includes(tag));
-
   return (
-
 
     <section className="page_reviews container padding-rl">
         <h2>Clients are Loving Our App</h2> 
         <div className="review">
-            <h1>hej {tag} </h1>
-             <div className="review_comma">
+            <div className="review_comma">
                 <img src={comma} alt="quotation marks." />
             </div>
-            
-            {
-                filteredReviews.map(review => (
-                    <ReviewItem key={review.id} item={review} />
-                ))
-            }
+            <div className="review_stars">
+                <img src={checkedStar} alt="One-star review." />
+                <img src={checkedStar} alt="two-star review." />
+                <img src={checkedStar} alt="three-star review." />
+                <img src={checkedStar} alt="four-star review."/>
+                <img src={uncheckedStar} alt="Fifth star unchecked." />
 
+            </div>
+            <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+            <div className="review_avatar">
+                <img src={femaleAvatar} alt="Picture of Fannie." />
+                <div>
+                    <h6>Fannie Summers</h6>
+                    <p>Designer</p>
+                </div>
+            </div>
         </div>
         <div className="review">
             <div className="review_comma">
