@@ -190,6 +190,17 @@ input::placeholder {
     font-family: fontAwesome, "Manrope", sans-serif;
 }
 
+.valid_input {
+    color: var(--color-success);
+    font-size: .75rem;
+    font-weight: 300;
+    background-color: var(--color-success-bg);
+    padding: 1px 6px;
+    width: fit-content;
+    border-radius: 4px;
+    /* display: none; */
+}
+
 .invalid_input {
     color: var(--color-error);
     font-size: .75rem;
@@ -968,7 +979,7 @@ header .container {
     background-color: #F3F6FF;;
     border-radius: 8px;
     padding: 3rem 1rem;
-    gap: 2rem;
+    /* gap: 2rem; */
     width: 100%;
 }
 
@@ -994,10 +1005,10 @@ header .container {
 /* Subscribe */
 .Subscribe_box {
     display: flex;
-    position: relative;
-
     grid-column: 1/4;
     grid-row: 2/3;
+    margin-top: 2rem;
+    margin-bottom: .2rem;
 
     input {
         padding-left: 1rem;
@@ -1014,12 +1025,14 @@ header .container {
     }
 }
 
+.subscribe_validation {
+    display: grid;
+    justify-content: left;
+    width: 100%;
+    height: fit-content;
 
-.Subscribe_letter  {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    transform: translate(-50%, -50%);
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
 
 

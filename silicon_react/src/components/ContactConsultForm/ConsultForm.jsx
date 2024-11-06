@@ -16,6 +16,8 @@ const ConsultForm = () => {
 
 
   const validateField = (name, value) => {
+    setSubmissionStatus('');
+
     let error = '';
     if (name === 'fullName' && !/^[A-Öa-ö\s\-]{2,20}$/.test(value)) {
       error = 'Your name must be at least 2 characters long, no numbers.';
@@ -110,7 +112,7 @@ const ConsultForm = () => {
         <select className="" id="specialistSelect" name="specialist" defaultValue={formData.specialist} onChange={handleInputChange} required>
           {options.map(option => ( <option key={option.id} value={option.id}>{option.text}</option>))}
         </select>
-        {submissionStatus && <p className='submission' >{submissionStatus}</p>}
+        {submissionStatus && <p className='valid_input' >{submissionStatus}</p>}
         <button className="btn_primary" id="consult_submit">Make an appointment</button>
       </form>
   )
