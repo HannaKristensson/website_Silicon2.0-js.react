@@ -17,6 +17,10 @@
     --color-white: #fff;
     --color-navlink: white;
 
+    --color-error: #EF4444;
+    --color-error-bg: hsla(0, 84%, 60%, 0.12);
+
+
     --btn-primary-hover: transparent;
     --btn-primary-active: hsla(239, 70%, 56%, 0.3);
     --btn-arrow: rgba(255, 255, 255, 0.05);
@@ -25,7 +29,7 @@
     --btn-appbtn: #EFF2FC;
     --btn-appbtn-hover: 0px 8px 18px -8px rgba(255, 255, 255, 0.5);
 
-    --icon-features: rgba(255, 255, 255, 0.05);
+    --icon-features: #171B25;
 
     --clr-bg: #0B0F19;
     --clr-bg-secondary: rgba(255, 255, 255, 0.07);
@@ -34,7 +38,7 @@
     --clr-bg-review:rgba(255, 255, 255, 0.04);
     --clr-bg-accordion: #131022;
     --clr-border-accordion: rgba(255, 255, 255, 0.15);
-    --clr-bg-form: rgba(255, 255, 255, 0.04);
+    --clr-bg-form: #171B25;
     --clr-border-question: rgba(255, 255, 255, 0.15);
     --clr-bg-input: rgba(255, 255, 255, 0.02);
     --clr-border-input: rgba(255, 255, 255, 0.18);

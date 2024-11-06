@@ -120,6 +120,12 @@ gap: .8rem;
     }
 }
 
+.submission {
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 
 
 /* SECTION TWO - DIRECTIONS  */

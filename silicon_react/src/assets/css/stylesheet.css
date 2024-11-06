@@ -164,6 +164,10 @@ button {
         outline: none;
         transition: 0.3s;
     }
+
+    select {
+        cursor: pointer;
+    }
     
     label {
         margin-top: 1rem;
@@ -186,22 +190,10 @@ input::placeholder {
     font-family: fontAwesome, "Manrope", sans-serif;
 }
 
-
-.valid_input {
-    color: var(--color-sucess);
-    font-size: .75rem;
-    font-weight: 500;
-    background-color: var(--color-sucess-bg);
-    padding: 1px 6px;
-    width: fit-content;
-    border-radius: 4px;
-    /* display: none; */
-}
-
 .invalid_input {
     color: var(--color-error);
     font-size: .75rem;
-    font-weight: 500;
+    font-weight: 300;
     background-color: var(--color-error-bg);
     padding: 1px 6px;
     width: fit-content;

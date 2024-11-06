@@ -17,8 +17,6 @@
     
     --color-error: #EF4444;
     --color-error-bg: hsla(0, 84%, 60%, 0.12);
-    --color-success: #22C55E;
-    --color-success-bg: hsla(142, 71%, 45%, 0.12);
 
 
     --btn-primary-active: hsla(239, 70%, 56%, 0.1);
@@ -38,7 +36,7 @@
     --clr-bg-review: #fff;
     --clr-bg-accordion: #fff;
     --clr-border-accordion: #E2E5F1;
-    --clr-bg-form: ehite;
+    --clr-bg-form: white;
     --clr-border-question: #E2E5F1;
      --clr-bg-input: #fff;
     --clr-border-input: #D4D7E5;
