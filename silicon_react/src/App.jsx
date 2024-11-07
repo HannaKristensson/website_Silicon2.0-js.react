@@ -7,7 +7,7 @@ import Home from './Pages/Home'
 import ContactUs from './Pages/Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ReviewProvider from './contexts/ReviewContext'
+import { ReviewProvider }  from './contexts/ReviewContext'
 
 
 
