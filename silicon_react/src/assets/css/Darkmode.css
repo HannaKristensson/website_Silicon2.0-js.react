@@ -35,6 +35,8 @@
     --clr-bg-secondary: rgba(255, 255, 255, 0.07);
     --clr-bg-gradient: rgb(99,102,241);
     --clr-bg-gradient2: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 50%, rgba(19, 16, 35, 0.01) 83%);
+    --clr-bg-menu: #202237;
+    --clr-bg-menu2: linear-gradient(0deg, #0B0F19, #202237);
     --clr-bg-review:rgba(255, 255, 255, 0.04);
     --clr-bg-accordion: #131022;
     --clr-border-accordion: rgba(255, 255, 255, 0.15);

@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/logotype.svg'
 import logolight from '../assets/images/logotype_light.svg'
 import DarkModeSwitch from './DarkModeSwitch';
+import DropdownMenu from './DropdownMenu';
 
 function Header() {
     // const [showMenu, se*]
@@ -31,9 +32,10 @@ function Header() {
                 </a>
             </div>
 
-            <button className="btn-mobile">
+            < DropdownMenu />
+            {/* <button className="btn-mobile">
                 <i className="fa-sharp fa-light fa-bars"></i>
-            </button>
+            </button> */}
 
         </div>
 

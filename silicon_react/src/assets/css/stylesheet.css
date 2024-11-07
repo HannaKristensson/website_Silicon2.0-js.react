@@ -288,12 +288,37 @@ header .container {
     }
 }
 
+/* dropdown menu */
 .btn-mobile {
     background-color: transparent;
+    height: 2.7rem;
+    width: 2.7rem;
     border: none;
     font-size: 1.4rem;
+    position: relative;
 }
 
+.btn-mobile_bg {
+    width: fit-content;
+    height: fit-content;
+    background-color:var(--clr-bg-menu);
+    border-radius: .4rem .4rem 0px 0px ;
+    transition: .3s;
+}
+
+.dropdown_menu {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-bg-menu2);
+    position: absolute;
+    text-align: left;
+    right: 1rem;
+    top: 3.5rem;
+    padding: .5rem;
+    gap: .7rem;
+    border: 1px solid var(--clr-border-accordion);
+    border-radius: .4rem 0px .4rem .4rem;
+}
 
 /* color mode toggler */
 .btn-toggle-switch {
@@ -357,7 +382,7 @@ header .container {
     height: 20px;
     width: 20px;
     left: 3px;
-    bottom: 2.5px;
+    bottom: 2.7px;
     background-color: var(--color-white);
     transition: var(--transition-toggler); 
 }
@@ -421,8 +446,10 @@ header .container {
 
 /* app buttons */
 .applink {
-    gap: 1rem;
+    display: grid;
+    gap:1rem;
     width: 100%;
+    height: fit-content;
 }
 
 .appbtn {
@@ -1088,6 +1115,10 @@ h4 {
 header .container {
     grid-template-columns: auto 3fr  auto auto auto;
     gap: 3rem;
+}
+
+.dropdown_menu { 
+    right: 2rem;
 }
 
 /* PAGES */
