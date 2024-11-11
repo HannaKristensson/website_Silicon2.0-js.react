@@ -16,13 +16,13 @@ function ContactDirection() {
   return (
 
     <section className="direction_section page_features container padding-rl">
-        <img src={map} className="imgcontainer direction_map" alt=""/>
+        <img src={map} className="imgcontainer direction_map" alt="Map over silver Terrace. Click to get navigation-help."/>
        <div className="direction_box">
             <div className="direction_card" id="direction_card1">
                 <h4 className="dir_header">Medical Center 1</h4>
-                <img className="dirimg_pin" src={pin} alt=""/>
-                <img className="dirimg_call" src={call} alt=""/>
-                <img className="dirimg_time" src={clock} alt=""/>
+                <img className="dirimg_pin" src={pin} alt="Adress."/>
+                <img className="dirimg_call" src={call} alt="Phone number."/>
+                <img className="dirimg_time" src={clock} alt="Open hours."/>
                 <p className="dirtxt_pin">4517 Washington Ave. Manchester, Kentucky 39495</p>
                 <p className="dirtxt_call">(406) 555-0120</p>
                 <div className="dirtxt_time"><p><b>Mon – Fri:</b> 9:00 am – 22:00 am</p>
@@ -31,9 +31,9 @@ function ContactDirection() {
 
             <div className="direction_card" id="direction_card2">
                 <h4 className="dir_header">Medical Center 2</h4>
-                <img className="dirimg_pin" src={pin} alt=""/>
-                <img className="dirimg_call" src={call} alt=""/>
-                <img className="dirimg_time" src={clock} alt=""/>
+                <img className="dirimg_pin" src={pin} alt="Adress."/>
+                <img className="dirimg_call" src={call} alt="Phone number."/>
+                <img className="dirimg_time" src={clock} alt="Upen hours."/>
                 <p className="dirtxt_pin">2464 Royal Ln. Mesa,New Jersey 45463</p>
                 <p className="dirtxt_call">(406) 544-0123</p>
                 <div className="dirtxt_time"><p><b>Mon – Fri:</b> 9:00 am – 22:00 am</p>
@@ -42,16 +42,16 @@ function ContactDirection() {
                 
             <div className="social_card">
                 <a href="http://facebook.com" className="square_icon" target="_blank">
-                    <img src={facebook} alt=""/>
+                    <img src={facebook} alt="Facebook."/>
                 </a>
                 <a href="http://twitter.com" className="square_icon" target="_blank">
-                    <img src={twitter} alt=""/>
+                    <img src={twitter} alt="Twitter."/>
                 </a>
                 <a href="http://instagram.com" className="square_icon" target="_blank">
-                    <img src={instagram} alt=""/>
+                    <img src={instagram} alt="Instagram."/>
                 </a>
                 <a href="http://youtube.com" className="square_icon" target="_blank">
-                    <img src={youtube} alt=""/>
+                    <img src={youtube} alt="Youtube."/>
                 </a>
             </div>
     

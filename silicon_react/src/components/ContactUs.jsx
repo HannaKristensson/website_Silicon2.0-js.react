@@ -21,7 +21,7 @@ function Contacts() {
 
       <div className="contact_card" id="contact_email">
         <button className="circle_icon ">
-            <img className="imgcontainer" src={contactMail} alt=""/>
+            <img className="imgcontainer" src={contactMail} alt="elvelope."/>
         </button>
 
         <div>
@@ -36,7 +36,7 @@ function Contacts() {
 
       <div className="contact_card" id="contact_career">
         <button className="circle_icon ">
-            <img className="imgcontainer" src={contactAddUser} alt=""/>
+            <img className="imgcontainer" src={contactAddUser} alt="Add user-photo."/>
         </button>
 
         <div>

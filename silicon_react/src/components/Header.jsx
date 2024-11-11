@@ -6,7 +6,6 @@ import DarkModeSwitch from './DarkModeSwitch';
 import DropdownMenu from './DropdownMenu';
 
 function Header() {
-    // const [showMenu, se*]
 
 
   return (
@@ -33,9 +32,6 @@ function Header() {
             </div>
 
             < DropdownMenu />
-            {/* <button className="btn-mobile">
-                <i className="fa-sharp fa-light fa-bars"></i>
-            </button> */}
 
         </div>
 

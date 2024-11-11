@@ -186,17 +186,6 @@ footer {
 }
 
 
-/* CONTACT-PAGE */
-/* Consult-form */
-/* .consult_box {
-    form {
-        color: var(--color-gray600);
-    }
-    input {
-        border-color: var(--color-gray600);
-    }
-} */
-
 @media ( min-width: 768px ) {
     /* PAGE ONE */
     .maintext {
