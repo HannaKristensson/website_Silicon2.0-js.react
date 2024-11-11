@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 import pin from '../assets/images/contact/direction_pin.svg'
 import call from '../assets/images/contact/direction_call.svg'
@@ -11,13 +10,13 @@ import twitter from '../assets/images/contact/direction_twitter.svg'
 import youtube from '../assets/images/contact/direction_youtube.svg'
 
 
-
 function ContactDirection() {
   return (
 
     <section className="direction_section page_features container padding-rl">
         <img src={map} className="imgcontainer direction_map" alt="Map over silver Terrace. Click to get navigation-help."/>
        <div className="direction_box">
+
             <div className="direction_card" id="direction_card1">
                 <h4 className="dir_header">Medical Center 1</h4>
                 <img className="dirimg_pin" src={pin} alt="Adress."/>

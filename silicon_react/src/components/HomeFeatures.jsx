@@ -13,6 +13,7 @@ function Features() {
         <div className="app-feature_phone" id="feature-phone">
             <img className="feature_phone" src={featurePhone} alt="A phone showing transaction features."/>
         </div >
+
         <div className="app-feature_text" id="feature-text">
             <h2>App Features</h2>
             <p>Lorem ipsum dolor sit amet, consectetur
@@ -21,7 +22,6 @@ function Features() {
             volutpat ligula est. Mattis fermentum, at nec
             lacus.</p>
         </div>
-
 
         <div className="features" id="feature-1">
             <div className="square_icon" id="feature_img ">
@@ -33,6 +33,7 @@ function Features() {
                 egestas suspendisse blandit justo.</p>
             </div>
         </div>
+
         <div className="features" id="feature-2">
             <div className="square_icon" id="feature_img ">
               <img src={featureImg2} alt="sheild." />  
@@ -44,6 +45,7 @@ function Features() {
                     non.</p>
             </div>
         </div>
+
         <div className="features" id="feature-3">
             <div className="square_icon" id="feature_img ">
               <img src={featureImg3} alt="Graph." />  
@@ -54,6 +56,7 @@ function Features() {
                     in auctor non. Odio vulputate ac nibh.</p>
             </div>
         </div>
+
         <div className="features" id="feature-4">
             <div className="square_icon" id="feature_img ">
               <img src={featureImg4} alt="Speech bubbles with question marks." />  
@@ -64,6 +67,7 @@ function Features() {
                     etiam facilisi in aenean quam mauris.</p>
             </div>
         </div>
+
         <div className="features" id="feature-5">
             <div className="square_icon " id="feature_img ">
               <img src={featureImg5} alt="Wallet." />  
@@ -75,6 +79,7 @@ function Features() {
                     eleifend.</p>
             </div>
         </div>
+        
         <div className="features" id="feature-6">
             <div className="square_icon" id="feature_img ">
               <img src={featureImg6} alt="Happy smiley." />  

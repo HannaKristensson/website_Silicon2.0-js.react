@@ -14,7 +14,6 @@ function How() {
                 <img className=" how_phone1" id="how_phone1" src={howPhone1} alt="Phone showing transaction features."/>
             </div>
 
-                
             <div className="how_phone-middle">
                 <img className="how_phone2" id="how_phone2" src={howPhone2}  alt="Phone showing bank balance."/>
 

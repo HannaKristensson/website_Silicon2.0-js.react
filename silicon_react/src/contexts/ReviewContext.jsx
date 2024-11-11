@@ -23,8 +23,6 @@ const baseApiUri = `https://win24-assignment.azurewebsites.net/api/testimonials/
             setLoading(false);
             console.log('Error')
         })
-
-
         }, []) 
 
 
@@ -40,9 +38,11 @@ const baseApiUri = `https://win24-assignment.azurewebsites.net/api/testimonials/
     
 
     return (
+
         <ReviewContext.Provider value={{ reviews , loading, error }}>
             {children}
         </ReviewContext.Provider>
+        
     )
 }
 

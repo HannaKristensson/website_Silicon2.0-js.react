@@ -5,7 +5,6 @@ function NewsletterForm() {
   const [submissionStatus, setSubmissionStatus] = useState('');
   const [errors, setErrors] = useState({});
 
-
   const validateField = (name, value) => {
     setSubmissionStatus('');
 
@@ -15,6 +14,7 @@ function NewsletterForm() {
     }
     setErrors(prevErrors => ({...prevErrors, [name]: error }))
   }
+
 
   const validateForm = () => {
     const newErrors = {}
@@ -28,7 +28,6 @@ function NewsletterForm() {
   }
 
 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({...formData, [name]: value})
@@ -36,6 +35,7 @@ function NewsletterForm() {
     validateField(name, value);
   }
   
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -45,26 +45,19 @@ function NewsletterForm() {
       },
       body: JSON.stringify(formData),
       });
-
-   
       
       if (res.ok) {
         setSubmissionStatus('Happy to have you with!');
         setFormData({ email: '' });
         console.log('Everything was successfull')
       } else {
-        
+        return
       }
 
-  
       console.log('status: ' + (res.status));
   
-
         const data = await res.json();
         console.log(data);
-
-
-      
     };
 
 

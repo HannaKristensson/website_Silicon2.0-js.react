@@ -29,7 +29,6 @@ const ConsultForm = () => {
   }
 
 
-
   const validateForm = () => {
     const newErrors = {}
 
@@ -46,14 +45,12 @@ const ConsultForm = () => {
   }
 
 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({...formData, [name]: value});
 
     validateField(name, value);
   }
-  
   
 
   const handleSubmit = async (e) => {
@@ -66,8 +63,7 @@ const ConsultForm = () => {
         headers: { 'content-Type': 'application/json'},
         body: JSON.stringify(formData),
         }
-      );
-    
+      ); 
 
       if (res.ok) {
         setSubmissionStatus('Thank you for your message!');
@@ -78,7 +74,6 @@ const ConsultForm = () => {
       }
 
       console.log('status: ' + (res.status));
-      
       
       
       try {
@@ -94,8 +89,6 @@ const ConsultForm = () => {
       
   }
       
-
-    
 
   
   return (

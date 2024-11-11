@@ -6,8 +6,8 @@ import contactMail from '../assets/images/contact/contact_mail.svg'
 import contactAddUser from '../assets/images/contact/contact_add_user.svg'
 
 
-
 function Contacts() {
+
   return (    
   <section className="contact_section container padding-rl">  
 
@@ -35,7 +35,6 @@ function Contacts() {
         <button className="circle_icon ">
             <img className="imgcontainer" src={contactAddUser} alt="Add user-photo."/>
         </button>
-
         <div>
         <h4>Careers</h4>
         <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
@@ -45,8 +44,6 @@ function Contacts() {
           </Link>
         </div>
       </div>
-
-
     </div>
 
     <div className="consult_box" id="consult_box">

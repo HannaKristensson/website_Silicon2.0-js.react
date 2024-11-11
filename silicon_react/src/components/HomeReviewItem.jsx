@@ -8,6 +8,7 @@ import comma from '../assets/images/review_comma.svg'
 function HomeReviewItem() {
     const { reviews, loading, error } = useContext (ReviewContext);
 
+    
     return (
         <>
         {reviews.slice(0,2).map((review) => (

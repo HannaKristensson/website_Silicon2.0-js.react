@@ -16,7 +16,6 @@ function DropdownMenu() {
     };
 
 
-
   return (
     <div>
         <div  className={ !isOpen ? 'btn-mobile_bg': null  }  onMouseEnter={menuHover} onMouseLeave={menuLeave} >
@@ -24,7 +23,6 @@ function DropdownMenu() {
                 
                 <i className="fa-sharp fa-light fa-bars"></i>
             </button>
-
         </div>
         {!isOpen && 
             <div className='dropdown_menu_bg' onMouseEnter={menuHover} onMouseLeave={menuLeave} > 
@@ -35,8 +33,6 @@ function DropdownMenu() {
                 
                 </div>
             </div>
-
-        
         }
     </div>
   )

@@ -1,7 +1,6 @@
 
 * {
-    margin: 0;
-    
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -12,7 +11,6 @@ body {
     font-optical-sizing: auto;
     text-align: center;
     font-weight: 400;
-
     background-color: var(--clr-bg);
 }
 
@@ -24,7 +22,6 @@ body {
  .background-clr {
     background-color: var(--clr-bg-secondary);
 }
-
 
 a {
     color: var(--color-primary);
@@ -114,7 +111,6 @@ button {
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
-    
 }
 
 .btn_primary:hover {
@@ -196,7 +192,6 @@ input::placeholder {
     padding: 1px 6px;
     width: fit-content;
     border-radius: 4px;
-    /* display: none; */
 }
 
 .invalid_input {
@@ -207,23 +202,7 @@ input::placeholder {
     padding: 1px 6px;
     width: fit-content;
     border-radius: 4px;
-    /* display: none; */
 }
-
-
-/* .empty_input {
-    border: 1px solid firebrick;
-}
-
-.error {
-    .form-input {
-        border-color: firebrick;
-    }
-    .invalid-input {
-        display: block;
-    }
-} */
-
 
 .container {
     width: 100%;
@@ -235,7 +214,6 @@ input::placeholder {
     display: grid; 
     place-items: center;
 }
-
 
 .padding-rl {
     padding-left: var(--container-padding);
@@ -262,6 +240,7 @@ input::placeholder {
         gap: 1rem;
     }
 }
+
 
 /* HEADER */
 header .container {
@@ -293,6 +272,7 @@ header .container {
         text-decoration: none;
     }
 }
+
 
 /* dropdown menu */
 .btn-mobile {
@@ -414,8 +394,6 @@ header .container {
 }
 
 
-
-
 /* PAGE ONE */
 .page-one {
     display: grid;
@@ -466,8 +444,6 @@ header .container {
 
 .appbtn:hover {
     box-shadow: var(--btn-appbtn-hover);
-    
-    /* 0px 8px 18px -8px var(--txtclr-heading); */
 }
 
 .appimg-light, .appimg-dark {
@@ -530,6 +506,7 @@ header .container {
     display: none;
 }
 
+
 /* Brandbox */
 .brands-container {
     display: none;
@@ -551,7 +528,6 @@ header .container {
 #brands {
     display: none;
 }
-
 
 
 /* PAGE TWO - FEATURES */
@@ -661,7 +637,6 @@ header .container {
         width: 160px;
         height: 44px;
     }
-    
 }
 
 /* Transfer */
@@ -888,7 +863,6 @@ header .container {
         }
     }
 
- 
      input + label + .acc_content {
          display: none;
      }
@@ -920,8 +894,6 @@ header .container {
          transition: .5s;
          cursor:pointer;
      }
-
-
 }
 
 .accordion_top {
@@ -962,9 +934,7 @@ header .container {
         font-size: var(--fontsize-14);
         color: var(--color-gray700);
     }
-
 }
-
 
 .questions_call-txt {
     Display: flex;
@@ -996,7 +966,6 @@ header .container {
     background-color: #F3F6FF;;
     border-radius: 8px;
     padding: 3rem 1rem;
-    /* gap: 2rem; */
     width: 100%;
 }
 
@@ -1017,7 +986,6 @@ header .container {
 .news_txt_d {
     display: none;
 }
-
 
 /* Subscribe */
 .Subscribe_box {
@@ -1069,8 +1037,6 @@ footer {
 
 
 
-
-
 @media ( min-width: 768px ) {
 .padding-rl {
     padding-left: 2rem;
@@ -1111,6 +1077,7 @@ header .container {
     right: 2rem;
 }
 
+
 /* PAGES */
 /* Page one */
 .page-one {
@@ -1123,7 +1090,6 @@ header .container {
     "maintext p1_img"
     "applink p1_img"
     "btn p1_img";
-
 
     p {
         text-align: left;
@@ -1468,7 +1434,6 @@ header .container {
 }
 
 
-
 /* Page two - Features */
 .page_features {
     text-align: left;
@@ -1529,7 +1494,6 @@ header .container {
     grid-column:  4/5;
     grid-row: 4/5; 
 } 
-
 
 
 /* Page three - How does it work */

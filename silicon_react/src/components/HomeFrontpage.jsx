@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import appStore from '../assets/images/appstore.svg'
 import appStoreDark from '../assets/images/appstore-dark.svg'
 import googlePlay from '../assets/images/googlePlay.svg'
@@ -13,7 +11,6 @@ function Frontpage() {
 
     <section className="page-one container padding-rl">       
     
-        {/* frontpage text */}
         <div className="title">
             <h1>Manage All Your Money in One App</h1>
         </div>
@@ -25,7 +22,6 @@ function Frontpage() {
                 <p className="maintext_2">Save, spend & manage money in your pocket.</p>
         </div>
             
-        {/* App links */}
         <div className="applink">
             <div className="appbtn">
                 <a href="https://www.apple.com/se/app-store/" target="_blank">
@@ -42,7 +38,6 @@ function Frontpage() {
             </div> 
         </div> 
     
-        {/* button down light */}
         <div className="discover-btn">
             <button className="btn_arrow ">
                 <img className="arrowdown arrow-dark imgcontainer" src={arrowDownDark} alt="Click here to discover more."/>

@@ -25,10 +25,10 @@ function Header() {
             < DarkModeSwitch />
 
             <div>
-                <a id="sign-in" href="#" className="btn_primary sign-in">
+                <Link id="sign-in" to={"/"} className="btn_primary sign-in">
                     <i className="fa-light fa-user-large"></i>
                     <span>Sign in / up</span>
-                </a>
+                </Link>
             </div>
 
             < DropdownMenu />

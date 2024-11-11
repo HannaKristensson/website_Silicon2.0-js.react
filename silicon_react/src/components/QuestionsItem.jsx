@@ -3,16 +3,9 @@ import React, { useState } from 'react';
 function QuestionsItem({ item }) {
 
   let nextId = 0;
-
   const itemList = []
-
-
-
-  
-
   const [isOpen, setIsOpen] = useState(false);
  
-
 
     const toggleContent = () => {
       setIsOpen(!isOpen);

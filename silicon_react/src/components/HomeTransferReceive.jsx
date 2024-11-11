@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import transferInner from '../assets/images/transfer_inner.svg'
 import transferOuter from '../assets/images/transfer_Outer.svg'
 import receiveInner from '../assets/images/receive_inner.svg'
@@ -18,10 +20,11 @@ function TransferReceive() {
                     <li>Manage payments and transactions online</li>
                 </ul>
                 <button className="btn_primary transfer_btn">
+                <Link to={'/'} >
                     Learn more
                     <i className="fa-sharp fa-solid fa-arrow-right">
-                        <a href="#"></a>
                     </i>
+                </Link>
                 </button>
             </div>
             <div className="transfer_img" >
@@ -54,9 +57,10 @@ function TransferReceive() {
                     </div>
                 </div>
                     <button className="btn_primary transfer_btn">
+                    <Link to={'/'} >
                       Learn more
                       <i className="fa-sharp fa-solid fa-arrow-right"></i>
-                      <a href="#"></a>
+                    </Link>
                   </button>
             </div>
         </div>

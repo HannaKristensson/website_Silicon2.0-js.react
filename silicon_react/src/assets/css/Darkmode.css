@@ -57,194 +57,194 @@
 
 
 .darkmode {
-
-.form_primary {
-    option {
-        background-color: #0B0F19;
-    }
-    option:hover {
-        background-color: #22C55E;
-    }
-}
-
-/* FRONTPAGE */
-/* HEADER */
-.navlink {
-    color: --color-navlink;
-}
-
-.logo_dark {
-    display: none;
-}
-
-.logo_light {
-    display: block;
-}
-
-
-/* PAGE ONE */
-.appimg-light {
-    display: none;
-}
-
-.appimg-dark {
-    display: block;
-}
-
-.discover-btn {
-    p {
-            opacity: 70%;
+        
+    .form_primary {
+        option {
+            background-color: #0B0F19;
         }
-    .img {
-        opacity: none;
+        option:hover {
+            background-color: #22C55E;
+        }
     }
-}
 
-.vectorarrow {
-    .arrow-dark {
+    /* FRONTPAGE */
+    /* HEADER */
+    .navlink {
+        color: --color-navlink;
+    }
+
+    .logo_dark {
         display: none;
     }
-    .arrow-light {
+
+    .logo_light {
         display: block;
     }
-}
-
-/* PAGE TWO */
-.page_features {
-    p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-}
-
-/* PAGE THREE */
-.page_how {
-    p {
-        color: var(--color-breadtext);
-    }
-}
-
-/* PAGE FOUR */
-.page_transfer-receive {
-    li {
-        color: rgba(255, 255, 255, 0.7);
-    }
-    p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-}
-
-/* PAGE FIVE */
-.review {
-    h6 {
-        color:var(--color-white);
-    }
-}
-
-/* PAGE SIX */
-.question_text {
-    p {
-        color: var(--color-breadtext);
-    }
-}
-
-.accordion {
-    label {
-        color: var(--color-white);
-    }
-}
-
-.acc_content {
-    p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-}
-
-label::after {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: white;
-}
 
 
-.questions_call-txt {
-    p {
-        color: var(--color-gray700);
-    }
-
-}
-
-/* PAGE SEVEN */
-.page_news { 
-    background-color: var(--clr-bg-form);
-}
-
-
-/* FOOTER */
-footer {
-    p {
-        color: var(--color-gray600)
-    }
-}
-
-
-@media ( min-width: 768px ) {
     /* PAGE ONE */
-    .maintext {
+    .appimg-light {
+        display: none;
+    }
+
+    .appimg-dark {
+        display: block;
+    }
+
+    .discover-btn {
+        p {
+                opacity: 70%;
+            }
+        .img {
+            opacity: none;
+        }
+    }
+
+    .vectorarrow {
+        .arrow-dark {
+            display: none;
+        }
+        .arrow-light {
+            display: block;
+        }
+    }
+
+
+    /* PAGE TWO */
+    .page_features {
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+
+    /* PAGE THREE */
+    .page_how {
         p {
             color: var(--color-breadtext);
         }
     }
 
-    /* BRANDBOX */
-    .brand-box {
-        background-color: var(--txtclr-heading);
-        border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* PAGE FOUR */
+    .page_transfer-receive {
+        li {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
     }
 
-    /* PAGE SEVEN */
-    .accordion {
-        label {
-            background-color: rgba(255, 255, 255, 0.04);
-        }
-        input:checked + label  {
-            border-radius: 8px 8px 0px 0px;
-            
+
+    /* PAGE FIVE */
+    .review {
+        h6 {
+            color:var(--color-white);
         }
     }
-    
-    .accordion_box {
-        border-radius: 0;
+
+
+    /* PAGE SIX */
+    .question_text {
+        p {
+            color: var(--color-breadtext);
+        }
+    }
+
+    .accordion {
+        label {
+            color: var(--color-white);
+        }
     }
 
     .acc_content {
-        background-color: rgba(255, 255, 255, 0.04);
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    label::after {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: white;
+    }
+
+    .questions_call-txt {
+        p {
+            color: var(--color-gray700);
+        }
+    }
+
+
+    /* PAGE SEVEN */
+    .page_news { 
+        background-color: var(--clr-bg-form);
+    }
+
+
+    /* FOOTER */
+    footer {
+        p {
+            color: var(--color-gray600)
+        }
+    }
+
+
+
+    @media ( min-width: 768px ) {
+        /* PAGE ONE */
+        .maintext {
+            p {
+                color: var(--color-breadtext);
+            }
+        }
+
+        /* BRANDBOX */
+        .brand-box {
+            background-color: var(--txtclr-heading);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* PAGE SEVEN */
+        .accordion {
+            label {
+                background-color: rgba(255, 255, 255, 0.04);
+            }
+            input:checked + label  {
+                border-radius: 8px 8px 0px 0px;
+            }
+        }
         
-    }
-}
+        .accordion_box {
+            border-radius: 0;
+        }
 
-@media (min-width : 1200px) {
-    .maintext {
-        p {
-            color: rgba(255, 255, 255, 0.7);
+        .acc_content {
+            background-color: rgba(255, 255, 255, 0.04);
         }
     }
 
-    /* PAGE TWO */
-    .page_features {
-        p {
-            color: rgba(255, 255, 255, 0.5);
+    @media (min-width : 1200px) {
+        .maintext {
+            p {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        /* PAGE TWO */
+        .page_features {
+            p {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        /* PAGE THREE */
+        .page_how {
+            p {
+                color: rgba(255, 255, 255, 0.7);
+            }
         }
     }
-
-    /* PAGE THREE */
-    .page_how {
-        p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-    }
-}
-
-    
-    
 }
 
 

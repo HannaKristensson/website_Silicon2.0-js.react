@@ -15,7 +15,7 @@ function Questions() {
         <p>Still have unanswered questions and need to get in touch?</p>
         </div>
 
-        <nav class="accordion">
+        <nav className="accordion">
             < QuestionsList />
         </nav>
 
