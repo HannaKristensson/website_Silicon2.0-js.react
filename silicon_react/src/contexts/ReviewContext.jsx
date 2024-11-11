@@ -10,15 +10,6 @@ const baseApiUri = `https://win24-assignment.azurewebsites.net/api/testimonials/
     const [error, setError] = useState(null);
 
 
-
-
-    // const getReview = async (id) => {
-    // const res = await fetch(baseApiUri + id);
-    //     const data = await res.json();
-
-    //     setReview(data)
-    // }
-
     useEffect(() => {
         fetch(baseApiUri)
         .then(data => data.json())
@@ -33,9 +24,6 @@ const baseApiUri = `https://win24-assignment.azurewebsites.net/api/testimonials/
             console.log('Error')
         })
 
-        const extrctReview = {
-
-        }
 
         }, []) 
 
