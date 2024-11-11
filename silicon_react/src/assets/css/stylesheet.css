@@ -303,20 +303,18 @@ header .container {
     height: fit-content;
     background-color:var(--clr-bg-menu);
     border-radius: .4rem .4rem 0px 0px ;
-    transition: .3s;
 }
 
 .dropdown_menu {
     display: flex;
     flex-direction: column;
-    background: var(--clr-bg-menu2);
+    background: var(--clr-bg-menu);
     position: absolute;
     text-align: left;
     right: 1rem;
     top: 3.5rem;
-    padding: .5rem;
-    gap: .7rem;
-    border: 1px solid var(--clr-border-accordion);
+    padding: 1rem;
+    gap: 1rem;
     border-radius: .4rem 0px .4rem .4rem;
 }
 
