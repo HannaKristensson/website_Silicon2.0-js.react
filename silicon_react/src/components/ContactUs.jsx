@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ConsultForm from './ContactConsultForm/ConsultForm.jsx'
+import Breadcrumb from './Breadcrumb.jsx';
 
 import contactMail from '../assets/images/contact/contact_mail.svg'
 import contactAddUser from '../assets/images/contact/contact_add_user.svg'
@@ -7,14 +8,10 @@ import contactAddUser from '../assets/images/contact/contact_add_user.svg'
 
 
 function Contacts() {
-  return (
-
+  return (    
   <section className="contact_section container padding-rl">  
-    <nav className="navigate">
-        <p><i className="fa-solid fa-house"></i> Homepage</p>
-        <p><i className="fa-solid fa-angles-right"></i></p> 
-        <p className="nav_focus">Contact</p> 
-    </nav>
+
+   < Breadcrumb />
 
     <div className="contact_box">
       <h2 id="contact_header">Contact Us</h2>
