@@ -40,16 +40,16 @@ function ContactDirection() {
             </div>
                 
             <div className="social_card">
-                <a href="http://facebook.com" className="square_icon" target="_blank">
+                <a href="http://facebook.com" className="square_icon icon_hover" target="_blank">
                     <img src={facebook} alt="Facebook."/>
                 </a>
-                <a href="http://twitter.com" className="square_icon" target="_blank">
+                <a href="http://twitter.com" className="square_icon icon_hover" target="_blank">
                     <img src={twitter} alt="Twitter."/>
                 </a>
-                <a href="http://instagram.com" className="square_icon" target="_blank">
+                <a href="http://instagram.com" className="square_icon icon_hover" target="_blank">
                     <img src={instagram} alt="Instagram."/>
                 </a>
-                <a href="http://youtube.com" className="square_icon" target="_blank">
+                <a href="http://youtube.com" className="square_icon icon_hover" target="_blank">
                     <img src={youtube} alt="Youtube."/>
                 </a>
             </div>

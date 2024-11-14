@@ -29,6 +29,7 @@
     --btn-appbtn-hover: 0px 8px 18px -8px #131022;
 
     --icon-features: #F3F6FF;
+    --icon-features-hover: #E2E5F1;
 
     --clr-bg: #fff;
     --clr-bg-secondary: #F3F6FF;
@@ -40,7 +41,7 @@
     --clr-border-accordion: #E2E5F1;
     --clr-bg-form: white;
     --clr-border-question: #E2E5F1;
-     --clr-bg-input: #fff;
+    --clr-bg-input: #fff;
     --clr-border-input: #D4D7E5;
     --clr-txt-input: #565973;
     --clr-placeholder-input: #B4B7C9;

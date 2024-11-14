@@ -3,39 +3,6 @@
     background-color: var(--color-gray100);
 }
 
-.square_icon {
-    height: 4rem;
-    aspect-ratio: 1;
-    border-radius: 8px;
-    background-color: var(--icon-features);
-    position: relative;
-
-    img {
-        height: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.circle_icon {
-    display: block;
-    background-color: var(--clr-bg-form);
-    height: 2.8rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: relative;
-
-    img {
-        padding: .75rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
 
 /* SECTION ONE - CONTACT */
 .contact_section {

@@ -124,6 +124,48 @@ button {
     background-color: var(--btn-primary-active);
 }
 
+.square_icon {
+    height: 4rem;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: var(--icon-features);
+    position: relative;
+    
+    img {
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.circle_icon {
+    display: block;
+    background-color: var(--clr-bg-form);
+    height: 2.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+        padding: .75rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.icon_hover {
+    transition: .3s;
+
+    &:hover {
+        background-color: var(--icon-features-hover);
+        transition: .3s;
+    }
+}
+
 .link_primary {
     font-size: var(--fontsize-14);
     color: var(--color-primary);
@@ -165,6 +207,7 @@ button {
     label {
         margin-top: 1.5rem;
         margin-bottom: .2rem;
+        color: var(--txtclr-heading);
     }
 
     input:focus, select:focus {
@@ -261,15 +304,16 @@ header .container {
 }
 
 .navlink {
-    p {
+    p, h1, h2, h3, h4, h5, h6 {
         color: var(--color-navlink);
         font-weight: 600;
     }
     
-    p:hover {
+    p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
         cursor: pointer;
         color: var(--color-primary);
         text-decoration: none;
+        transition: .2s;
     }
 }
 
@@ -299,8 +343,8 @@ header .container {
     text-align: left;
     right: 1rem;
     top: 3.5rem;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 1.8rem;
+    gap: 2rem;
     border-radius: .4rem 0px .4rem .4rem;
 }
 

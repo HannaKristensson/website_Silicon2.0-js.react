@@ -17,9 +17,9 @@ function Contacts() {
       <h2 id="contact_header">Contact Us</h2>
 
       <div className="contact_card" id="contact_email">
-        <button className="circle_icon ">
+        <div className="circle_icon ">
             <img className="imgcontainer" src={contactMail} alt="elvelope."/>
-        </button>
+        </div>
 
         <div>
           <h4>Email Us</h4>
@@ -32,9 +32,9 @@ function Contacts() {
       </div>
 
       <div className="contact_card" id="contact_career">
-        <button className="circle_icon ">
+        <div className="circle_icon ">
             <img className="imgcontainer" src={contactAddUser} alt="Add user-photo."/>
-        </button>
+        </div>
         <div>
         <h4>Careers</h4>
         <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>

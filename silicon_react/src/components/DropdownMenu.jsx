@@ -27,9 +27,9 @@ function DropdownMenu() {
         {!isOpen && 
             <div className='dropdown_menu_bg' onMouseEnter={menuHover} onMouseLeave={menuLeave} > 
                 <div className='dropdown_menu' > 
-                    <NavLink className='navlink' to={"/"} > <p>Frontpage</p> </NavLink> 
-                    <NavLink className='navlink' to={"/"} > <p>Features</p> </NavLink> 
-                    <NavLink className='navlink' to={"/contact"} onClick={() => setIsOpen(false)}  > <p>Contact</p> </NavLink> 
+                    <NavLink className='navlink' to={"/"} > <h3>Frontpage</h3> </NavLink> 
+                    <NavLink className='navlink' to={"/"} > <h3>Features</h3> </NavLink> 
+                    <NavLink className='navlink' to={"/contact"} onClick={() => setIsOpen(false)}  > <h3>Contact</h3> </NavLink> 
                 
                 </div>
             </div>
